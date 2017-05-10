@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.wiggins.progresswheel.widget.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_small">
+
+        <Button
+            android:id="@+id/btn_random"
+            android:layout_width="@dimen/btn_width_normal"
+            android:layout_height="@dimen/btn_height_normal"
+            android:background="@drawable/btn_blue_selector"
+            android:text="@string/setting"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_small" />
+
+        <SeekBar
+            android:id="@+id/mSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_small" />
+    </LinearLayout>
+
+
+    <com.wiggins.progresswheel.widget.ProgressWheel
+        android:id="@+id/mProgressWheel"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/margin_normal"
+        app:pwBarColor="@color/red"
+        app:pwBarWidth="15"
+        app:pwDefaultProgress="49"
+        app:pwRimColor="@color/orange"
+        app:pwRimWidth="15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.wiggins.progresswheel.widget.RoundProgressBar
+            android:id="@+id/mRoundProgressBar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:progressColor="@color/blue"
+            app:roundColor="@color/red" />
+
+        <com.wiggins.progresswheel.widget.RingProgressBar
+            android:id="@+id/mRingProgressBar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="@dimen/margin_normal"
+            app:maxProgress="100"
+            app:ringColor="@color/blue"
+            app:ringIsStroke="false"
+            app:ringProgressColor="@color/orange"
+            app:ringWidth="7dp" />
+    </LinearLayout>
+</LinearLayout>

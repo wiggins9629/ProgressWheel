@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressWheel">
+        <!-- 文本内容 -->
+        <attr name="pwText" format="string" />
+        <!-- 文本字体颜色 -->
+        <attr name="pwTextColor" format="color" />
+        <!-- 文本字体大小 -->
+        <attr name="pwTextSize" format="dimension" />
+        <!-- 进度条颜色 -->
+        <attr name="pwBarColor" format="color" />
+        <!-- 进度条宽度 -->
+        <attr name="pwBarWidth" format="integer" />
+        <!-- 进度条默认长度 -->
+        <attr name="pwDefaultProgress" format="integer" />
+        <!-- 默认轮廓颜色 -->
+        <attr name="pwRimColor" format="color" />
+        <!-- 默认轮廓宽度 -->
+        <attr name="pwRimWidth" format="integer" />
+        <!-- 圆圈内部的颜色 -->
+        <attr name="pwCircleInnerColor" format="color" />
+        <!-- 控制外边缘颜色 -->
+        <attr name="pwOuterEdgeColor" format="color" />
+        <!-- 控制外边缘大小 -->
+        <attr name="pwOuterEdgeSize" format="dimension" />
+        <!-- 控制内边缘颜色 -->
+        <attr name="pwInnerEdgeColor" format="color" />
+        <!-- 控制内边缘大小 -->
+        <attr name="pwInnerEdgeSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <!-- 圆环颜色 -->
+        <attr name="roundColor" format="color" />
+        <!-- 圆环宽度 -->
+        <attr name="roundWidth" format="float" />
+        <!-- 进度条颜色 -->
+        <attr name="progressColor" format="color" />
+        <!-- 默认进度百分比 -->
+        <attr name="progressRatio" format="float" />
+        <!-- 字体颜色 -->
+        <attr name="textColors" format="color" />
+        <!-- 字体大小 -->
+        <attr name="textSizes" format="dimension" />
+        <!-- 是否显示进度百分比 -->
+        <attr name="textIsShow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RingProgressBar">
+        <!-- 圆环颜色 -->
+        <attr name="ringColor" format="color" />
+        <!-- 圆环宽度 -->
+        <attr name="ringWidth" format="dimension" />
+        <!-- 圆环是否空心 -->
+        <attr name="ringIsStroke" format="boolean" />
+        <!-- 进度颜色 -->
+        <attr name="ringProgressColor" format="color" />
+        <!-- 字体颜色 -->
+        <attr name="textColor" format="color" />
+        <!-- 字体大小 -->
+        <attr name="textSize" format="dimension" />
+        <!-- 是否显示中间的进度值 -->
+        <attr name="textIsDisplayable" format="boolean" />
+        <!-- 最大进度值 -->
+        <attr name="maxProgress" format="integer" />
+        <!-- 进度条的风格：实心或者空心 -->
+        <attr name="ringProgressStyle">
+            <enum name="STROKE" value="0" />
+            <enum name="FILL" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
